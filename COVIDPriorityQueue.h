@@ -3,6 +3,7 @@
 
 #include "patient.h"
 #include <queue>
+#include <stdexcept>
 #include <vector>
 
 struct PatientPriority {

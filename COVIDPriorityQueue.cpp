@@ -1,5 +1,4 @@
 #include "COVIDPriorityQueue.h"
-#include <stdexcept>
 
 bool PatientPriority::operator()(const Patient& a, const Patient& b) const {
     if (a.hasPrecondition == b.hasPrecondition) {

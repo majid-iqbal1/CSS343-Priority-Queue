@@ -37,7 +37,7 @@ echo "    the program puns and produces correct output"
 echo "====================================================="
 
 # Execute program
-$EXEC_PROGRAM
+echo "30 " | $EXEC_PROGRAM
 
 echo "====================================================="
 echo "3. If the section below is empty, then there are no clang-tidy warnings "
@@ -94,6 +94,7 @@ if hash valgrind 2>/dev/null; then
 else
   echo "WARNING: valgrind not available"
 fi
+
 
 # Remove the executable
 rm -rf ./a.out* 2>/dev/null

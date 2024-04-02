@@ -1,4 +1,4 @@
-Tue Apr  2 07:30:21 UTC 2024
+Tue Apr  2 07:48:47 UTC 2024
 Linux LinuxMachine 6.4.16-linuxkit #1 SMP PREEMPT Thu Nov 16 10:49:20 UTC 2023 aarch64 aarch64 aarch64 GNU/Linux
 uid=1000(cssuwbstudent) gid=1000(cssuwbstudent) groups=1000(cssuwbstudent),10(wheel)
 =====================================================
@@ -9,54 +9,54 @@ uid=1000(cssuwbstudent) gid=1000(cssuwbstudent) groups=1000(cssuwbstudent),10(wh
 2. If the section below is empty or has the expected output 
     the program puns and produces correct output
 =====================================================
-How many vaccines are available? Majid, Isabella, Lily, Scarlett, Mila, Aurora, Anna, Mary, Mia, Amelia, Madison, John, Mark, Evelyn, Camila, Noah, Grace, Emily, Lucy, Lillian, Riley, Abigail, Evan, Avery, Penelope, Zoe, Alice, Liam, Tom, Emma, Chloe, Stella, Sophia, Luna, Addison, Nora, Ella, Harper, Ava, Bob, Hannah, Victoria, Zoey, Elizabeth, Sofia, Charlotte, Natalie, Jane, Olivia, Aria, 
+How many vaccines are available? Majid, Isabella, Lily, Scarlett, Mila, Aurora, Anna, Mary, Mia, Amelia, Madison, John, Mark, Evelyn, Camila, Noah, Grace, Emily, Lucy, Lillian, Riley, Abigail, Evan, Avery, Penelope, Zoe, Alice, Liam, Tom, Emma, 
 =====================================================
 3. If the section below is empty, then there are no clang-tidy warnings 
    (ignore warnings from system headers, such as "13554 warnings generated.")
 =====================================================
 32190 warnings generated.
-78154 warnings generated.
-/home/cssuwbstudent/majidi2/CSS343-Priority-Queue/COVIDPriorityQueue.cpp:2:1: error: system include stdexcept not allowed [llvmlibc-restrict-system-libc-headers,-warnings-as-errors]
-#include <stdexcept>
-^~~~~~~~~~~~~~~~~~~~
-/home/cssuwbstudent/majidi2/CSS343-Priority-Queue/COVIDPriorityQueue.cpp:4:23: error: declaration must be declared within the '__llvm_libc' namespace [llvmlibc-implementation-in-namespace,-warnings-as-errors]
+78155 warnings generated.
+/home/cssuwbstudent/majidi2/CSS343-Priority-Queue/COVIDPriorityQueue.cpp:3:23: error: declaration must be declared within the '__llvm_libc' namespace [llvmlibc-implementation-in-namespace,-warnings-as-errors]
 bool PatientPriority::operator()(const Patient& a, const Patient& b) const {
                       ^
-/home/cssuwbstudent/majidi2/CSS343-Priority-Queue/COVIDPriorityQueue.cpp:4:49: error: parameter name 'a' is too short, expected at least 3 characters [readability-identifier-length,-warnings-as-errors]
+/home/cssuwbstudent/majidi2/CSS343-Priority-Queue/COVIDPriorityQueue.cpp:3:49: error: parameter name 'a' is too short, expected at least 3 characters [readability-identifier-length,-warnings-as-errors]
 bool PatientPriority::operator()(const Patient& a, const Patient& b) const {
                                                 ^
-/home/cssuwbstudent/majidi2/CSS343-Priority-Queue/COVIDPriorityQueue.cpp:4:67: error: parameter name 'b' is too short, expected at least 3 characters [readability-identifier-length,-warnings-as-errors]
+/home/cssuwbstudent/majidi2/CSS343-Priority-Queue/COVIDPriorityQueue.cpp:3:67: error: parameter name 'b' is too short, expected at least 3 characters [readability-identifier-length,-warnings-as-errors]
 bool PatientPriority::operator()(const Patient& a, const Patient& b) const {
                                                                   ^
-/home/cssuwbstudent/majidi2/CSS343-Priority-Queue/COVIDPriorityQueue.cpp:11:26: error: declaration must be declared within the '__llvm_libc' namespace [llvmlibc-implementation-in-namespace,-warnings-as-errors]
+/home/cssuwbstudent/majidi2/CSS343-Priority-Queue/COVIDPriorityQueue.cpp:10:26: error: declaration must be declared within the '__llvm_libc' namespace [llvmlibc-implementation-in-namespace,-warnings-as-errors]
 void COVIDPriorityQueue::push(const Patient& patient) {
                          ^
-/home/cssuwbstudent/majidi2/CSS343-Priority-Queue/COVIDPriorityQueue.cpp:12:24: error: 5 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,readability-magic-numbers,-warnings-as-errors]
+/home/cssuwbstudent/majidi2/CSS343-Priority-Queue/COVIDPriorityQueue.cpp:11:24: error: 5 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers,readability-magic-numbers,-warnings-as-errors]
     if (patient.age >= 5) {
                        ^
-/home/cssuwbstudent/majidi2/CSS343-Priority-Queue/COVIDPriorityQueue.cpp:17:26: error: declaration must be declared within the '__llvm_libc' namespace [llvmlibc-implementation-in-namespace,-warnings-as-errors]
+/home/cssuwbstudent/majidi2/CSS343-Priority-Queue/COVIDPriorityQueue.cpp:16:26: error: declaration must be declared within the '__llvm_libc' namespace [llvmlibc-implementation-in-namespace,-warnings-as-errors]
 bool COVIDPriorityQueue::empty() const {
                          ^
-/home/cssuwbstudent/majidi2/CSS343-Priority-Queue/COVIDPriorityQueue.cpp:21:26: error: declaration must be declared within the '__llvm_libc' namespace [llvmlibc-implementation-in-namespace,-warnings-as-errors]
+/home/cssuwbstudent/majidi2/CSS343-Priority-Queue/COVIDPriorityQueue.cpp:20:26: error: declaration must be declared within the '__llvm_libc' namespace [llvmlibc-implementation-in-namespace,-warnings-as-errors]
 void COVIDPriorityQueue::pop() {
                          ^
-/home/cssuwbstudent/majidi2/CSS343-Priority-Queue/COVIDPriorityQueue.cpp:27:29: error: declaration must be declared within the '__llvm_libc' namespace [llvmlibc-implementation-in-namespace,-warnings-as-errors]
+/home/cssuwbstudent/majidi2/CSS343-Priority-Queue/COVIDPriorityQueue.cpp:26:29: error: declaration must be declared within the '__llvm_libc' namespace [llvmlibc-implementation-in-namespace,-warnings-as-errors]
 Patient COVIDPriorityQueue::top() const {
                             ^
 /home/cssuwbstudent/majidi2/CSS343-Priority-Queue/COVIDPriorityQueue.h:5:1: error: system include queue not allowed, transitively included from /home/cssuwbstudent/majidi2/CSS343-Priority-Queue/COVIDPriorityQueue.h [llvmlibc-restrict-system-libc-headers,-warnings-as-errors]
 #include <queue>
 ^~~~~~~~~~~~~~~~
-/home/cssuwbstudent/majidi2/CSS343-Priority-Queue/COVIDPriorityQueue.h:6:1: error: system include vector not allowed, transitively included from /home/cssuwbstudent/majidi2/CSS343-Priority-Queue/COVIDPriorityQueue.h [llvmlibc-restrict-system-libc-headers,-warnings-as-errors]
+/home/cssuwbstudent/majidi2/CSS343-Priority-Queue/COVIDPriorityQueue.h:6:1: error: system include stdexcept not allowed, transitively included from /home/cssuwbstudent/majidi2/CSS343-Priority-Queue/COVIDPriorityQueue.h [llvmlibc-restrict-system-libc-headers,-warnings-as-errors]
+#include <stdexcept>
+^~~~~~~~~~~~~~~~~~~~
+/home/cssuwbstudent/majidi2/CSS343-Priority-Queue/COVIDPriorityQueue.h:7:1: error: system include vector not allowed, transitively included from /home/cssuwbstudent/majidi2/CSS343-Priority-Queue/COVIDPriorityQueue.h [llvmlibc-restrict-system-libc-headers,-warnings-as-errors]
 #include <vector>
 ^~~~~~~~~~~~~~~~~
-/home/cssuwbstudent/majidi2/CSS343-Priority-Queue/COVIDPriorityQueue.h:8:8: error: accessing fields in struct 'PatientPriority' is inefficient due to poor alignment; currently aligned to 1 bytes, but recommended alignment is 0 bytes [altera-struct-pack-align,-warnings-as-errors]
+/home/cssuwbstudent/majidi2/CSS343-Priority-Queue/COVIDPriorityQueue.h:9:8: error: accessing fields in struct 'PatientPriority' is inefficient due to poor alignment; currently aligned to 1 bytes, but recommended alignment is 0 bytes [altera-struct-pack-align,-warnings-as-errors]
 struct PatientPriority {
        ^
-/home/cssuwbstudent/majidi2/CSS343-Priority-Queue/COVIDPriorityQueue.h:8:8: note: use "__attribute__((aligned(0)))" to align struct 'PatientPriority' to 0 bytes
-/home/cssuwbstudent/majidi2/CSS343-Priority-Queue/COVIDPriorityQueue.h:9:36: error: parameter name 'a' is too short, expected at least 3 characters [readability-identifier-length,-warnings-as-errors]
+/home/cssuwbstudent/majidi2/CSS343-Priority-Queue/COVIDPriorityQueue.h:9:8: note: use "__attribute__((aligned(0)))" to align struct 'PatientPriority' to 0 bytes
+/home/cssuwbstudent/majidi2/CSS343-Priority-Queue/COVIDPriorityQueue.h:10:36: error: parameter name 'a' is too short, expected at least 3 characters [readability-identifier-length,-warnings-as-errors]
     bool operator()(const Patient& a, const Patient& b) const;
                                    ^
-/home/cssuwbstudent/majidi2/CSS343-Priority-Queue/COVIDPriorityQueue.h:9:54: error: parameter name 'b' is too short, expected at least 3 characters [readability-identifier-length,-warnings-as-errors]
+/home/cssuwbstudent/majidi2/CSS343-Priority-Queue/COVIDPriorityQueue.h:10:54: error: parameter name 'b' is too short, expected at least 3 characters [readability-identifier-length,-warnings-as-errors]
     bool operator()(const Patient& a, const Patient& b) const;
                                                      ^
 /home/cssuwbstudent/majidi2/CSS343-Priority-Queue/main.cpp:2:1: error: system include fstream not allowed [llvmlibc-restrict-system-libc-headers,-warnings-as-errors]
@@ -273,13 +273,13 @@ struct Patient {
 /opt/rh/gcc-toolset-12/root/usr/lib/gcc/aarch64-redhat-linux/12/../../../../include/c++/12/bits/predefined_ops.h:158:23: error: 'operator()' must resolve to a function declared within the '__llvm_libc' namespace [llvmlibc-callee-namespace,-warnings-as-errors]
         { return bool(_M_comp(*__it1, *__it2)); }
                       ^
-/home/cssuwbstudent/majidi2/CSS343-Priority-Queue/COVIDPriorityQueue.cpp:4:23: note: resolves to this declaration
+/home/cssuwbstudent/majidi2/CSS343-Priority-Queue/COVIDPriorityQueue.cpp:3:23: note: resolves to this declaration
 bool PatientPriority::operator()(const Patient& a, const Patient& b) const {
                       ^
 /opt/rh/gcc-toolset-12/root/usr/lib/gcc/aarch64-redhat-linux/12/../../../../include/c++/12/bits/predefined_ops.h:196:16: error: 'operator()' must resolve to a function declared within the '__llvm_libc' namespace [llvmlibc-callee-namespace,-warnings-as-errors]
         { return bool(_M_comp(*__it, __val)); }
                       ^
-/home/cssuwbstudent/majidi2/CSS343-Priority-Queue/COVIDPriorityQueue.cpp:4:23: note: resolves to this declaration
+/home/cssuwbstudent/majidi2/CSS343-Priority-Queue/COVIDPriorityQueue.cpp:3:23: note: resolves to this declaration
 bool PatientPriority::operator()(const Patient& a, const Patient& b) const {
                       ^
 /opt/rh/gcc-toolset-12/root/usr/lib/gcc/aarch64-redhat-linux/12/../../../../include/c++/12/bits/stl_heap.h:141:29: error: 'operator=' must resolve to a function declared within the '__llvm_libc' namespace [llvmlibc-callee-namespace,-warnings-as-errors]
@@ -320,7 +320,7 @@ Use -header-filter=.* to display errors from all non-system headers. Use -system
    You can fix formatting errors using "clang-format -i <filename>" on command line
 =====================================================
 Running clang-format on ./COVIDPriorityQueue.cpp
-4,8c4,8
+3,7c3,7
 < bool PatientPriority::operator()(const Patient& a, const Patient& b) const {
 <     if (a.hasPrecondition == b.hasPrecondition) {
 <         return a.age < b.age; // Older patients get higher priority
@@ -332,7 +332,7 @@ Running clang-format on ./COVIDPriorityQueue.cpp
 >     return a.age < b.age; // Older patients get higher priority
 >   }
 >   return !a.hasPrecondition; // Patients with preconditions get highest priority
-11,14c11,14
+10,13c10,13
 < void COVIDPriorityQueue::push(const Patient& patient) {
 <     if (patient.age >= 5) {
 <         queue.push(patient);
@@ -342,13 +342,13 @@ Running clang-format on ./COVIDPriorityQueue.cpp
 >   if (patient.age >= 5) {
 >     queue.push(patient);
 >   }
-17,19c17
+16,18c16
 < bool COVIDPriorityQueue::empty() const {
 <     return queue.empty();
 < }
 ---
 > bool COVIDPriorityQueue::empty() const { return queue.empty(); }
-22,24c20,22
+21,23c19,21
 <     if (!empty()) {
 <         queue.pop();
 <     }
@@ -356,7 +356,7 @@ Running clang-format on ./COVIDPriorityQueue.cpp
 >   if (!empty()) {
 >     queue.pop();
 >   }
-28,31c26,30
+27,30c25,29
 <     if (!empty()) {
 <         return queue.top();
 <     }
