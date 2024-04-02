@@ -22,3 +22,5 @@ Patients under 5 years old are not included in the queue.
 
 ## Usage
 Start the program and input the number of available vaccines when prompted. The program will then display the names of the patients who will receive the vaccine based on priority.
+
+Author and code implementation by Majid Iqbal
