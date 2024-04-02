@@ -1,0 +1,12 @@
+Tue Apr  2 06:57:39 UTC 2024
+Linux LinuxMachine 6.4.16-linuxkit #1 SMP PREEMPT Thu Nov 16 10:49:20 UTC 2023 aarch64 aarch64 aarch64 GNU/Linux
+uid=1000(cssuwbstudent) gid=1000(cssuwbstudent) groups=1000(cssuwbstudent),10(wheel)
+=====================================================
+1. If the section below is empty, the program compiles 
+   without warnings with -Wall -Wextra flags
+=====================================================
+=====================================================
+2. If the section below is empty or has the expected output 
+    the program puns and produces correct output
+=====================================================
+How many vaccines are available? 100
