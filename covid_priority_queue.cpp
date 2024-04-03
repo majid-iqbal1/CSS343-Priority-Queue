@@ -1,4 +1,4 @@
-#include "COVIDPriorityQueue.h"
+#include "covid_priority_queue.h"
 
 bool PatientPriority::operator()(const Patient &first,
                                  const Patient &second) const {
