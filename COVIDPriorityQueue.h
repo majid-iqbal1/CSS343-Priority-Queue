@@ -7,7 +7,7 @@
 #include <vector>
 
 struct PatientPriority {
-    bool operator()(const Patient& a, const Patient& b) const;
+    bool operator()(const Patient& first, const Patient& second) const;
 };
 
 class COVIDPriorityQueue {
