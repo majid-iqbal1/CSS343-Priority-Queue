@@ -5,7 +5,7 @@
 #include <string>
 
 int main() {
-  COVIDPriorityQueue queue;
+  CovidPriorityQueue queue;
   std::ifstream file("patients.txt");
   std::string line;
 
