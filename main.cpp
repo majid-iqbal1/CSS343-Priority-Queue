@@ -1,4 +1,4 @@
-#include "COVIDPriorityQueue.h"
+#include "covid_priority_queue.h"
 #include <fstream>
 #include <iostream>
 #include <sstream>

@@ -8,8 +8,7 @@ struct Patient {
     int age;
     bool hasPrecondition;
 
-    Patient(std::string name, int age, bool precondition) : name(std::move(name)), age(age),
-            hasPrecondition(precondition) {}
+    Patient(std::string name, int age, bool preCondition);
 };
 
 #endif // PATIENT_H

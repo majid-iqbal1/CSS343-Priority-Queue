@@ -102,7 +102,7 @@ rm ./a.out 2>/dev/null
 
 g++ -std=c++11 -fsanitize=address -fno-omit-frame-pointer -g *.cpp
 # Execute program
-$EXEC_PROGRAM > /dev/null 2> /dev/null
+echo "30" | $EXEC_PROGRAM > /dev/null 2> /dev/null
 
 
 echo "====================================================="
@@ -114,7 +114,7 @@ rm ./a.out 2>/dev/null
 if hash valgrind 2>/dev/null; then
   g++ -g -std=c++11 *.cpp
   # redirect program output to /dev/null will running valgrind
-  valgrind --log-file="valgrind-output.txt" $EXEC_PROGRAM > /dev/null 2>/dev/null
+  valgrind --log-file="valgrind-output.txt" echo "30" | $EXEC_PROGRAM > /dev/null 2>/dev/null
   cat valgrind-output.txt
   rm valgrind-output.txt 2>/dev/null
 else
