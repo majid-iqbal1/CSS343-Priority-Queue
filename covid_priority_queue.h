@@ -1,5 +1,5 @@
-#ifndef COVIDPRIORITYQUEUE_H_
-#define COVIDPRIORITYQUEUE_H_
+#ifndef COVID_PRIORITY_QUEUE_H_
+#define COVID_PRIORITY_QUEUE_H_
 
 #include "patient.h"
 #include <queue>
@@ -10,7 +10,7 @@ struct PatientPriority {
     bool operator()(const Patient& first, const Patient& second) const;
 };
 
-class COVIDPriorityQueue {
+class CovidPriorityQueue {
 private:
     std::priority_queue<Patient, std::vector<Patient>, PatientPriority> queue;
 
@@ -21,4 +21,4 @@ public:
     Patient top() const;
 };
 
-#endif // COVIDPRIORITYQUEUE_H_
+#endif // COVID_PRIORITY_QUEUE_H_

@@ -8,22 +8,22 @@ bool PatientPriority::operator()(const Patient &first,
   return !first.hasPrecondition;
 }
 
-void COVIDPriorityQueue::push(const Patient &patient) {
+void CovidPriorityQueue::push(const Patient &patient) {
   const int minAgeLimit = 5;
   if (patient.age >= minAgeLimit) {
     queue.push(patient);
   }
 }
 
-bool COVIDPriorityQueue::empty() const { return queue.empty(); }
+bool CovidPriorityQueue::empty() const { return queue.empty(); }
 
-void COVIDPriorityQueue::pop() {
+void CovidPriorityQueue::pop() {
   if (!empty()) {
     queue.pop();
   }
 }
 
-Patient COVIDPriorityQueue::top() const {
+Patient CovidPriorityQueue::top() const {
   if (!empty()) {
     return queue.top();
   }
