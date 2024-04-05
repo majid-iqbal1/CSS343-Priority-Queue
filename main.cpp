@@ -4,7 +4,13 @@
 #include <sstream>
 #include <string>
 
-int main() {
+int main(int argc, char *argv[]) {
+  if (argc != 2) {
+    std::cerr << "usuage: " << argv[0] << "number of vaccines " << std::endl;
+    return 1;
+  }
+  int availableVaccines = std::stoi(argv[1]);
+
   CovidPriorityQueue queue;
   std::ifstream file("patients.txt");
   std::string line;
@@ -12,28 +18,15 @@ int main() {
   while (std::getline(file, line)) {
     std::istringstream iss(line);
     std::string name;
-    std::string precondition;
+    std::string preCondition;
     int age;
 
-    std::string temp;
-    while (iss >> temp) {
-      if (name.empty()) {
-        name = temp;
-      } else {
-        std::istringstream validator(temp);
-        if (validator >> age) {
-          break;
-        }
-        name += " " + temp;
-      }
-    }
-    iss >> precondition;
-    queue.push(Patient(name, age, precondition == "Yes"));
-  }
+    std::getline(iss, name, ',');
+    iss >> age >> std::ws;
+    std::getline(iss, preCondition);
 
-  int availableVaccines;
-  std::cout << "How many vaccines are available? ";
-  std::cin >> availableVaccines;
+    queue.push(Patient(name, age, preCondition == "Yes"));
+  }
 
   while (!queue.empty() && availableVaccines > 0) {
     Patient patient = queue.top();
