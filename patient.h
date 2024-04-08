@@ -5,17 +5,19 @@
  * @date April 07, 2024
  */
 
-#ifndef PATIENT_H
-#define PATIENT_H
+#ifndef PATIENT_H_
+#define PATIENT_H_
 
 #include <string>
 
+using namespace std;
+
 struct Patient {
-    std::string name;
+    string name;
     int age;
     bool hasPreCondition;
 
-    Patient(std::string name, int age, bool preCondition);
+    Patient(string name, int age, bool preCondition);
 };
 
-#endif // PATIENT_H
+#endif // PATIENT_H_
